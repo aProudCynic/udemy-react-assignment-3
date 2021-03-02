@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Route, Switch, Link } from 'react-router-dom';
+import { BrowserRouter, Route, Switch, Link, Redirect } from 'react-router-dom';
 
 import NotFound from './containers/NotFound/NotFound';
 
@@ -17,6 +17,7 @@ class App extends Component {
           <Switch>
             <Route path="/users" component={Users}></Route>
             <Route path="/courses" component={Courses}></Route>
+            <Redirect from="/all-courses" to="/courses"></Redirect>
             <Route component={NotFound}></Route>
           </Switch>
         </div>
