@@ -15,7 +15,6 @@ class App extends Component {
             <Link to={{pathname: '/users'}}>Users</Link> | <Link to={{pathname: '/courses'}}>Courses</Link>
           </nav>
           <Switch>
-            <Route path="/courses/:id" component={Course}></Route>
             <Route path="/users" component={Users}></Route>
             <Route path="/courses" component={Courses}></Route>
           </Switch>
