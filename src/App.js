@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route, Switch, Link } from 'react-router-dom';
 
-import Course from './containers/Course/Course';
+import NotFound from './containers/NotFound/NotFound';
 
 import Courses from './containers/Courses/Courses';
 import Users from './containers/Users/Users';
@@ -17,6 +17,7 @@ class App extends Component {
           <Switch>
             <Route path="/users" component={Users}></Route>
             <Route path="/courses" component={Courses}></Route>
+            <Route component={NotFound}></Route>
           </Switch>
         </div>
       </BrowserRouter>
